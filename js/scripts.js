@@ -87,4 +87,12 @@ function removeCart(){
   document.getElementById('notification').style.display = "none";
 }
 
+function openSideMenu(){
+document.getElementById('side-menu').style.display = "block";
+
+}
+
+function closeSideMenu(){
+  document.getElementById('side-menu').style.display = "none";
+}
 

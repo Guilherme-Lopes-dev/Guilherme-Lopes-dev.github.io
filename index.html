@@ -11,17 +11,27 @@
   <link rel="stylesheet" href="/css/carousel.css">
   <link rel="stylesheet" href="./css/info.css">
   <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="./css/mediaqueries.css">
+  <link rel="stylesheet" href="./css/sidemenu.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 
 <body>
 
+  <div id="side-menu" class="side-menu">
+    <button class="close-side-menu" onclick="closeSideMenu()"></button>
+    <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Woman</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
   <nav class="row" onclick="closeCart()">
 
     <div class="left">
+      <button class="menu" onclick="openSideMenu()"><img src="./assets/icon-menu.svg" alt=""></button>
       <div class="logo"><img src="/assets/logo.svg" alt=""></div>
       <div class="options">
         <div class="texthover">
@@ -33,13 +43,13 @@
         </div>
       </div>
     </div>
-
+   
     <div class="right">
-      
+
       <div class="cart-id">
         <img class="cart-icon" src="/assets/icon-cart.svg" width="20px" height="20px" alt=""
           onmouseover="document.getElementById('cart').style.display = 'block';">
-          <div id="notification">1</div>
+        <div id="notification">1</div>
 
         <img class="profile" src="/assets/image-avatar.png" width="50px" height="50px" alt="">
       </div>

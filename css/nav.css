@@ -7,6 +7,12 @@ nav {
   background-color: var(--cor-white);
   position: relative;
   padding-top: 30px;
+  
+}
+
+.menu{display: none;
+  background-color: transparent;
+  border: transparent;
 }
 
 .options span {
@@ -20,14 +26,18 @@ nav {
 }
 
 .left {
-  width: 50vw;
+  width: 80vw;
   display: flex;
-  align-items: baseline;
   flex-direction: row;
   padding-left: 5vw;
-  justify-content: center;
+  position: relative;
 }
 
+.logo {
+  
+  cursor: pointer;
+
+}
 .texthover {
   position: absolute;
 
@@ -36,9 +46,8 @@ nav {
 .options {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-
-  width: 80vw;
+  width:fit-content;
+  
 }
 
 .right {
@@ -47,6 +56,7 @@ nav {
   justify-content: space-around;
   width: 20vw;
   align-items: center;
+
 }
 .right .profile {
   cursor: pointer;
@@ -58,10 +68,7 @@ nav {
   border: 3px solid var(--cor-bg-orange);
 }
 
-.logo {
-  padding-top: 12px;
-  cursor: pointer;
-}
+
 .cart-id {
   display: flex;
   justify-content: center;

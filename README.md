@@ -1,7 +1,6 @@
 # Frontend Mentor - E-commerce product page 
 
 ![Design preview](./preview/127.0.0.1_5500_.png)
-![Design preview](./preview/videoPreview.mp4)
 
 
 

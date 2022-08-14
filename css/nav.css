@@ -1,0 +1,93 @@
+@import url(./common.css);
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--cor-white);
+  position: relative;
+  padding-top: 30px;
+}
+
+.options span {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  padding: 25px;
+}
+.texthover span:hover {
+  border-bottom: 5px solid orange;
+}
+
+.left {
+  width: 50vw;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  padding-left: 5vw;
+  justify-content: center;
+}
+
+.texthover {
+  position: absolute;
+
+  cursor: pointer;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 80vw;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20vw;
+  align-items: center;
+}
+.right .profile {
+  cursor: pointer;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.right .profile:hover {
+  border: 3px solid var(--cor-bg-orange);
+}
+
+.logo {
+  padding-top: 12px;
+  cursor: pointer;
+}
+.cart-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  width: 20vw;
+}
+.cart-icon {
+  position: absolute;
+  left: 3vw;
+}
+
+#notification{
+  display: none;
+  text-align: center;
+ padding-top: 2%;
+  border-radius: 100%;
+  background-color: var(--cor-bg-orange);
+  width: 20px;
+  height: 15px;
+  position:absolute;
+  top: -2vh;
+  left: 4vw;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  border: 0.5px solid var(--cor-greyish-blue);
+}

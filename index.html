@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/showcase.css">
+  <link rel="stylesheet" href="/css/carousel.css">
+  <link rel="stylesheet" href="./css/info.css">
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <nav class="row" onclick="closeCart()">
+
+    <div class="left">
+      <div class="logo"><img src="/assets/logo.svg" alt=""></div>
+      <div class="options">
+        <div class="texthover">
+          <span>Collections</span>
+          <span>Men</span>
+          <span>Women</span>
+          <span>About</span>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      
+      <div class="cart-id">
+        <img class="cart-icon" src="/assets/icon-cart.svg" width="20px" height="20px" alt=""
+          onmouseover="document.getElementById('cart').style.display = 'block';">
+          <div id="notification">1</div>
+
+        <img class="profile" src="/assets/image-avatar.png" width="50px" height="50px" alt="">
+      </div>
+    </div>
+  </nav>
+  <div id="cart" onmouseover="showCount(), showTotal()">
+    <div class="cart-head">
+      <p>Cart</p>
+    </div>
+    <div class="cart-body">
+      <div class="cart-section">
+        <div class="cart-full" id="cart-full">
+          <div class="tumb"><img src="./assets/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="cart-text">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125 x <span id="count"></span><strong> = <span id="totalValue"></span>$</strong></p>
+            <button class="checkout">Checkout</button>
+          </div>
+          <button class="delete" onclick="removeCart()"><img src="./assets/icon-delete.svg" alt=""></button>
+        </div>
+      </div>
+      <div class="cart-empty" id="cart-empty">
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="showcase" onclick="closeCart()">
+
+    <div class="catalog">
+      <div id="imgdisplay" onclick="showCarousel()">
+
+      </div>
+
+      <div class="tumbnails">
+        <img src="./assets/image-product-1-thumbnail.jpg" alt="" onclick="displayImg1()">
+        <img src="/assets/image-product-2-thumbnail.jpg" alt="" onclick="displayImg2()">
+        <img src="/assets/image-product-3-thumbnail.jpg" alt="" onclick="displayImg3()">
+        <img src="/assets/image-product-4-thumbnail.jpg" alt="" onclick="displayImg4()">
+      </div>
+    </div>
+
+    <div class="displayCarousel" id="displayCarousel">
+      <div class="carousel" id="carousel">
+
+
+        <div class="image-sliders">
+          <div class="image-to-center">
+            <div class="imagesOnCarousel">
+              <img class="displayimg" src="/assets/image-product-1.jpg">
+              <img class="displayimg" src="/assets/image-product-2.jpg">
+              <img class="displayimg" src="/assets/image-product-3.jpg">
+              <img class="displayimg" src="/assets/image-product-4.jpg">
+              <button class="close" onclick="closeCarousel()"></button>
+              <div class="prev-next">
+                <button class="prev" onclick="plusDivs(-1)"></button>
+                <button class="next" onclick="plusDivs(1)"></button>
+              </div>
+              <div class="tumbnails-modal">
+                <img src="/assets/image-product-1-thumbnail.jpg" alt="">
+                <img src="/assets/image-product-2-thumbnail.jpg" alt="">
+                <img src="/assets/image-product-3-thumbnail.jpg" alt="">
+                <img src="/assets/image-product-4-thumbnail.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+
+      <div class="text">
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+      </div>
+
+      <div class="price">
+        <span class="actual">$125.00</span>
+        <span class="discount">50%</span>
+        <span class="total">$250.00</span>
+      </div>
+
+      <div class="quantityBuy">
+
+        <div class="quantity">
+          <button class="minus" onclick="decrement();"><img src="./assets/icon-minus.svg" alt=""></button>
+          <span name="valueDisplay" id="valueDisplay">0</span>
+          <button class="plus" onclick="increment();"><img src="./assets/icon-plus.svg" alt=""></button>
+        </div>
+
+        <div class="buy">
+          <button class="buttonBuy " onclick="addToCart()" onmouseover="showCount(), showTotal()">
+            <img src="./assets/icon-cart.svg" alt="">
+            Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <script src="./js/scripts.js"></script>
+
+
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+
+</html>

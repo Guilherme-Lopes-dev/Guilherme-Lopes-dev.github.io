@@ -1,0 +1,39 @@
+@import url('http://fonts.cdnfonts.com/css/kumbh-sans');
+
+:root {
+  --cor-bg-orange: hsl(26, 100%, 55%);
+  --cor-bg-paleOrange:hsl(25, 100%, 94%);
+  --cor-dark-blue:hsl(220, 13%, 13%) ;
+  --cor-dark-greyish: hsl(219, 9%, 45%);
+  --cor-greyish-blue:hsl(220, 14%, 75%) ;
+  --cor-ligth-greyish-blue:hsl(223, 64%, 98%) ;
+  --cor-white: hsl(0, 0%, 100%);
+  --cor-black: hsl(0, 0%, 0%);
+}
+.row {
+    display: flex;
+    width: 100%;
+   
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .center {
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .left {
+      align-items: flex-start;
+      justify-items: center;
+    }
+
+    body{
+      background-color: var(--cor-white);
+      font-family: "Kumbh Sans";
+    }
+
+  

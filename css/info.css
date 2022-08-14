@@ -1,0 +1,10 @@
+@import url(common.css);
+
+.price{
+ 
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 10vw;
+  }
+
